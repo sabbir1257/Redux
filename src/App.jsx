@@ -1,13 +1,11 @@
-import './App.css'
-import Counter from './Counter'
+import Shop from './components/Shop';
 
-function App() {
-
+const App = () => {
   return (
-    <>
-      <Counter/>
-    </>
-  )
-}
+    <div className='container'>
+     <Shop/>
+    </div>
+  );
+};
 
-export default App
+export default App;
