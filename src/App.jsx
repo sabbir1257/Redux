@@ -1,10 +1,14 @@
+import Navbar from './components/Navbar';
 import Shop from './components/Shop';
 
 const App = () => {
   return (
+    <>
+    <Navbar/>
     <div className='container'>
      <Shop/>
     </div>
+    </>
   );
 };
 
