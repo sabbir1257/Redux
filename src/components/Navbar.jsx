@@ -1,13 +1,15 @@
-import React, { useState } from 'react';
-
+import  { useState } from 'react';
+import { useSelector } from 'react-redux';
+ 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const amount = useSelector((state) => state.amount);
 
   return (
     <nav className="bg-blue-600 text-white shadow-md">
       <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
         {/* Logo */}
-        <div className="text-xl font-bold">Your Balance  10000</div>
+        <button className="text-xl font-bold px-3 py-2 text-white bg-blue-500 rounded-md">Your Balance  {amount}</button>
 
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-6">

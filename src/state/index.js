@@ -1,1 +1,2 @@
-export * as actionCreators from './action/index'
+import * as actionCreators from './action/index';
+export default actionCreators;
